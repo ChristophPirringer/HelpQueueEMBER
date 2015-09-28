@@ -1,1 +1,25 @@
-{{outlet}}
+{{#if 'isFormShowing'}}
+  <div id="new-ticket-form" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+    <form class="form" role="form">
+      <label for="student-name" class="sr-only">Your name</label>
+      <div class="form-group">
+         {{input class ="form-control" value=name id="student-name" placeholder="Please enter your name."}}
+      </div>
+      <label for="ticket-body" class="sr-only">Fill in your Question</label>
+      <div class="form-group">
+         {{textarea rows="6" class ="form-control" value=body id="ticket-body" placeholder="Give a brief description of the issue you are having."}}
+      </div>
+    </form>
+  </div>
+{{else}}
+<div id="question">
+  <p class="lead">
+    Have you gone through all the steps on the Learn How to Program debugging lesson?
+  </p>
+  <button class="btn btn-danger" {{action 'nextLead'}}>Yes >></button>
+</div>
+{{/if}}
+
+<p class="testor">
+
+</p>
