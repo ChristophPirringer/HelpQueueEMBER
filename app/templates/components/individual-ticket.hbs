@@ -1,0 +1,20 @@
+{{#if ticket.helped }}
+
+<div id="queued" class="text-center col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+  <p class = "lead">
+    Your ticket has been closed.
+  </p>
+</div>
+
+{{else}}
+
+<div id="queued" class="text-center col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+  <p class = "lead">
+      Thanks, {{ticket.name}}. Help is on the way.
+  </p>
+  <p>
+    Leave this page open while you keep working on the problem
+  </p>
+  <button class="btn-danger btn" {{action 'cancelTicket'}}>Nevermind, we got it.</button>
+</div>
+{{/if}}
