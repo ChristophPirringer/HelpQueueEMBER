@@ -1,0 +1,17 @@
+<div class="col-md-4">
+  <div class="jumbotron ">
+
+
+    <div class="segment">
+      <h5>By: {{ticket.name}}</h5>
+      <h5>Submitted at: {{moment-from-now ticket.createdAt}}</h5>
+      <h5>About: {{ticket.body}}</h5>
+      {{#if ticket.helped}}
+        <h5>Status: Closed </h5>
+      {{else}}
+        <h5>Status: Open </h5>
+      {{/if}}
+    </div>
+    <button {{action 'closeTicket' ticket}} class="btn btn-sm btn-danger pull-right">Close Ticket</button>
+  </div>
+</div>

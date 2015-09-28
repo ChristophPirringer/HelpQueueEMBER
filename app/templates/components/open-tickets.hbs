@@ -1,0 +1,7 @@
+<h2 class="navbar text-center page-header">{{#link-to 'statistics' id="statisticsLink"}}Statistics{{/link-to}}</h2>
+
+<div class="row">
+  {{#each openTicketsByDate as |ticket|}}
+    {{ticket-tile ticket=ticket closeTicket="closeTicket"}}
+  {{/each}}
+</div>

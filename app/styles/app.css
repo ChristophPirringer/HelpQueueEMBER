@@ -175,10 +175,16 @@ and (max-device-width : 568px) {
   width: 12rem;
 }
 
-#linkhome,
-#linkhome:hover,
-#linkhome:focus {
-  color:#efefef;
+#linkhome, #statisticsLink,
+#linkhome:hover, #statisticsLink:hover,
+#linkhome:focus, #statisticsLink:focus {
+  color:#efefef !important;
   text-decoration:none;
   cursor: pointer;
+}
+#question {
+  text-align:center;
+  width:50%;
+  margin:auto;
+  margin-top:5rem;
 }

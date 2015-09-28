@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('student');
   this.route('teacher');
   this.route('ticket', {path: '/tickets/:ticket_id'});
+  this.route('statistics');
 });
 
 export default Router;
