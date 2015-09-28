@@ -8,6 +8,7 @@ export default Ember.Route.extend({
   actions: {
     cancelTicket(ticket) {
       ticket.set('helped', true);
+      ticket.set('updatedAt', new Date());
       ticket.save();
     }
   }

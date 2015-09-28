@@ -174,3 +174,11 @@ and (max-device-width : 568px) {
   display: inline-block;
   width: 12rem;
 }
+
+#linkhome,
+#linkhome:hover,
+#linkhome:focus {
+  color:#efefef;
+  text-decoration:none;
+  cursor: pointer;
+}
