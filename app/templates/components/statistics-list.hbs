@@ -1,3 +1,7 @@
 <h2>Total tickets: {{tickets.length}}</h2>
 
-<h2>Average wait time: {{average-wait tickets}}</h2>
+<h2>Average wait time: {{averageWaitTime}}</h2>
+
+{{#each days as |day|}}
+  {{statistics-tile day=day}}
+{{/each}}

@@ -7,22 +7,33 @@ export default Ember.Component.extend({
   actions: {
     nextLead: function() {
       var leads = this.get('leads');
-      // console.log(leads);
       if (leads.length < 1) {
         this.set('isFormShowing', true);
       }
-      // console.log(this.get('isFormShowing'));
       $('.lead').text(leads.shift());
     },
     submitTicket: function() {
+      var d = new Date();
+      var theDate = d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear();
+      var today = this.get('days').findBy('date', theDate);
+      // console.log(theDate);
+      if (today === undefined) {
+        var params = {
+          date: theDate
+        }
+        this.sendAction('newDate', params)
+      }
+
       var params = {
         name: this.get('name'),
         body: this.get('body'),
-        createdAt: new Date(),
+        createdAt: d,
         updatedAt: "",
-        helped: false
-      };
-      this.sendAction('submitTicket', params)
+        helped: false,
+        day: today
+
+      }
+      this.sendAction('submitTicket', params, today)
     }
   }
 });

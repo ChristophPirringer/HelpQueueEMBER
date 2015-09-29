@@ -8,5 +8,6 @@ export default DS.Model.extend({
   helped: DS.attr("boolean"),
   waitTime: Ember.computed('createdAt', 'updatedAt', function(key, value) {
     return Math.floor((this.get('updatedAt') - this.get('createdAt')) / 60000);
-  })
+  }),
+  day: DS.belongsTo('day', {async: true})
 });

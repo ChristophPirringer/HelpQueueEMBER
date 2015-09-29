@@ -188,3 +188,7 @@ and (max-device-width : 568px) {
   margin:auto;
   margin-top:5rem;
 }
+
+.ticket-tile {
+  height: 300px;
+}
