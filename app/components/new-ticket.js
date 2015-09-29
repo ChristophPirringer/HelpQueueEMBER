@@ -16,9 +16,10 @@ export default Ember.Component.extend({
       var d = new Date();
       var theDate = d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear();
       var today = this.get('days').findBy('date', theDate);
+      var dayParams;
       // console.log(theDate);
       if (today === undefined) {
-        var params = {
+          params = {
           date: theDate
         }
         this.sendAction('newDate', params)
@@ -30,10 +31,10 @@ export default Ember.Component.extend({
         createdAt: d,
         updatedAt: "",
         helped: false,
-        day: today
+        day: this.get('days').findBy('date', theDate)
 
       }
-      this.sendAction('submitTicket', params, today)
+      this.sendAction('submitTicket', params, (this.get('days').findBy('date', theDate)))
     }
   }
 });

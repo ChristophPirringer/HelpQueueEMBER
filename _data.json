@@ -5,74 +5,96 @@
     "body": "incididunt aliquip cillum incididunt pariatur commodo consequat sint commodo laborum in sit reprehenderit",
     "createdAt": "2015-09-28 03:51:23 +07:00",
     "updatedAt": "",
-    "helped": false
+    "helped": false,
+    "day": "0"
   },
   {
     "name": "Baker &  Townsend",
     "body": "eu esse commodo id fugiat in labore ut ad cupidatat",
     "createdAt": "2015-09-28 05:42:34 +07:00",
     "updatedAt": "",
-    "helped": false
+    "helped": false,
+    "day": "0"
   },
   {
     "name": "Stewart & James",
     "body": "ad cupidatat dolore consectetur minim elit proident elit esse officia reprehenderit mollit consequat ipsum nisi Lorem",
     "createdAt": "2015-09-28 07:55:49 +07:00",
     "updatedAt": "",
-    "helped": false
+    "helped": false,
+    "day": "0"
   },
   {
     "name": "Garrett & Stacie",
     "body": "commodo aliquip tempor est qui ad et aliquip commodo labore culpa tempor cupidatat reprehenderit consequat culpa",
     "createdAt": "2015-09-28 12:37:20 +07:00",
     "updatedAt": "",
-    "helped": false
+    "helped": false,
+    "day": "0"
   },
   {
     "name": "Fowler & Simpson",
     "body": "duis officia amet consectetur laborum ullamco nisi ad amet esse",
     "createdAt": "2015-09-28 06:26:35 +07:00",
     "updatedAt": "",
-    "helped": false
+    "helped": false,
+    "day": "0"
   },
   {
     "name": "Nolan & Alisha",
     "body": "elit nisi in qui minim ullamco qui sint et deserunt aliquip fugiat eu laborum voluptate anim",
     "createdAt": "2015-09-28 09:31:43 +07:00",
     "updatedAt": "",
-    "helped": false
+    "helped": false,
+    "day": "0"
   },
   {
     "name": "Sheppard & Lessie",
     "body": "ut magna ex quis id sint et non aliqua mollit voluptate officia consequat",
     "createdAt": "2015-09-28 03:41:28 +07:00",
     "updatedAt": "",
-    "helped": false
+    "helped": false,
+    "day": "0"
   },
   {
     "name": " ami & Eloise",
     "body": "eiusmod quis pariatur esse excepteur cupidatat elit aliqua ut",
     "createdAt": "2015-09-28 04:26:40 +07:00",
     "updatedAt": "",
-    "helped": false
+    "helped": false,
+    "day": "0"
   },
   {
     "name": "Kayla & Paul",
     "body": "amet consectetur anim ut aliquip sunt cillum aliquip Lorem id non aliqua eu nisi enim",
     "createdAt": "2015-09-28 07:20:03 +07:00",
     "updatedAt": "",
-    "helped": false
+    "helped": false,
+    "day": "0"
   },
   {
     "name": "Mable & Holloway",
     "body": "occaecat eiusmod proident ex eiusmod laboris ex consequat commodo proident",
     "createdAt": "2015-09-28 08:53:45 +07:00",
     "updatedAt": "",
-    "helped": false
+    "helped": false,
+    "day": "0"
   }
 ],
 "days": [{
-  "date": "29/9/2015"
-}]
+  "date": "28/9/2015",
+  "tickets": {
+    "0": true,
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true
+  }
+  }]
 
 }
