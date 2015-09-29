@@ -12,9 +12,7 @@ export default Ember.Route.extend({
       if (today) {
         params['day'] = today;
       } else {
-        var dateParams = {
-            date: theDate
-          }
+        var dateParams = { date: theDate }
         today = this.store.createRecord('day', dateParams);
         today.save();
         params['day'] = today;
@@ -24,10 +22,6 @@ export default Ember.Route.extend({
       newTicket.save();
       today.save();
       this.transitionTo('ticket', newTicket.id);
-    },
-    newDate: function(params) {
-      var newDate = this.store.createRecord('day', params);
-      newDate.save();
     }
   }
 });

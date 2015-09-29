@@ -13,14 +13,13 @@ export default Ember.Component.extend({
       $('.lead').text(leads.shift());
     },
     submitTicket: function() {
-      var d = new Date();  
+      var d = new Date();
       var params = {
         name: this.get('name'),
         body: this.get('body'),
         createdAt: d,
         updatedAt: "",
         helped: false
-
       }
       this.sendAction('submitTicket', params, this.get('days'))
     }
