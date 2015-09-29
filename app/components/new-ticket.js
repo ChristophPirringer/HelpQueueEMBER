@@ -13,28 +13,16 @@ export default Ember.Component.extend({
       $('.lead').text(leads.shift());
     },
     submitTicket: function() {
-      var d = new Date();
-      var theDate = d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear();
-      var today = this.get('days').findBy('date', theDate);
-      // if (today === undefined) {
-      //     params = {
-      //     date: theDate
-      //   }
-      //   this.sendAction('newDate', params)
-      // }
-
+      var d = new Date();  
       var params = {
         name: this.get('name'),
         body: this.get('body'),
         createdAt: d,
         updatedAt: "",
         helped: false
-        // day: this.get('days').findBy('date', theDate)
 
       }
       this.sendAction('submitTicket', params, this.get('days'))
     }
   }
 });
-
-//, (this.get('days').findBy('date', theDate))
