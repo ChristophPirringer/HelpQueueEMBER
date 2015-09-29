@@ -2,8 +2,7 @@
   <div class="jumbotron ">
     <div class="segment">
       <h5>By: {{ticket.name}}</h5>
-      <h5>Created on: {{ticket.day}}</h5>
-      <h5>Submitted at: {{moment-from-now ticket.createdAt}}</h5>
+      <h5>Submitted: {{moment-from-now ticket.createdAt}}</h5>
       <h5>About: {{ticket.body}}</h5>
       {{#if ticket.helped}}
         <h5>Status: Closed </h5>
